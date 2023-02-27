@@ -1,1 +1,36 @@
 
+---
+layout: default
+title: Research Areas
+---
+<div class="blurb">
+	<h1>Is task-irrelavent information discarded in neural networks?</h1>
+	<p>The traditional view of abstraction in psychology suggests that as information for one task is further processed, other information is progressively
+  discarded. In line with this, research using deep neural networks has shown features became increasingly specialized for the trained task in the later 
+  layers of the network when continuing to train over the rest of the neural network.
+   However, more recent neuroimaging evidence in face and object perception have suggested this may not be the case. 
+  For example, face identity and facial expression information have been founded to be encoded in common brain regions. One question to now consider
+  then is why information for an irrelevant task would need to be discarded? If we can prove that in a computational system information for one task 
+  (e.g., face identity recognition) does not needed to be discarded when processing facial expression, this could be a potential explanation for why
+  we find information for both tasks in shared neural regions.
+    
+   We hypothesize that representations optimized for expression recognition contribute to identity recognition and vice versa. Moreover, this occurs
+    because identity and expression are entangled sources of information in a face image, and disentangling one helps to disentangle the other, 
+    leading to two non-trivial computational predictions. First, if recognition of face identity and facial expression are mutually beneficial, training
+    an algorithm to recognize face identity might lead to the spontaneous formation of representations that encode facial expression information and, 
+    likewise, training a separate algorithm to recognize facial expression might lead to the spontaneous emergence of representations that encode face 
+    identity information. Second, if this phenomenon occurs because disentangling identity from expression helps to also achieve the reverse, 
+    then integrated representations would not arise because recognition of identity and expression rely on common features. On the contrary, features 
+    important for the recognition of face identity and features important for the recognition of facial expression should become increasingly disentangled 
+    and orthogonal along the processing stream.
+    
+    We test ‘in silico’ these computational hypotheses inspired by the neuroscience literature. We studied whether features from hidden layers of a DCNN 
+    trained to recognize face identity could be used successfully to recognize facial expression. 
+    Symmetrically, we evaluated whether features from hidden layers of a DCNN trained to recognize facial expression could be used to identify face 
+    identity. In line with our anticipated results, we found that in a DCNN trained to label one property (i.e., expression), the readout performance of 
+    the non-trained property (i.e., identity) was not just preserved, but improved, from layer to layer. Finally, we investigated the relationship between 
+    features encoding information that distinguish between identities and expres- sions across different layers of the DCNNs. We demonstrated that 
+    identity-discriminating features and expression-discriminating features became increasingly orthogonal over the network layers.
+</p>
+  <p>/p>
+</div><!-- /.blurb -->
